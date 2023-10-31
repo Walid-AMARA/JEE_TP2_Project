@@ -71,4 +71,4 @@ Pour rendre l'application plus robuste et conviviale, je pourrais :
 - Utiliser des mécanismes de gestion de sessions plus avancés, comme les tokens JWT.
 
 
-**10. Passez en revue le code de la servlet ProfileUpdateServlet et expliquez comment elle met à jour les informations
+**10. Passez en revue le code de la servlet ProfileUpdateServlet et expliquez comment elle met à jour les informations**

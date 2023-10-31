@@ -1,0 +1,9 @@
+<persistence-unit name="YourPersistenceUnitName">
+    <properties>
+        <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://test (2)/Users"/>
+        <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+        <property name="javax.persistence.jdbc.user" value="your_username"/>
+        <property name="javax.persistence.jdbc.password" value="your_password"/>
+        <!-- Other properties as needed -->
+    </properties>
+</persistence-unit>

@@ -29,7 +29,7 @@ public class User {
     @Column(name = "motDePasse", length = 100)
     private String motDePasse;
 }
-
+```
 **3. Comment gérez-vous l'authentification des utilisateurs ? Expliquez le mécanisme que vous avez choisi (Form-Based Authentication, filtres, etc.).**
 
 J'ai mis en place un mécanisme de gestion d'authentification en utilisant les sessions HTTP. Lorsqu'un utilisateur se connecte avec succès, j'enregistre l'e-mail de l'utilisateur dans la session. J'utilise également un filtre pour vérifier si l'utilisateur est authentifié avant d'autoriser l'accès à certaines pages.
@@ -41,6 +41,7 @@ Dans la session utilisateur, je stocke l'e-mail de l'utilisateur après son auth
 ```java
 HttpSession session = request.getSession(false); // Récupérer la session sans en créer une nouvelle
 String userEmail = (String) session.getAttribute("authenticatedUser");
+```
 
 **5. Décrivez le flux d'une inscription utilisateur, de la soumission du formulaire à l'enregistrement des données dans la base de données.**
 

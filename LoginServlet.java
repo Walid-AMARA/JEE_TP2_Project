@@ -8,11 +8,15 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.io.IOException;
 
+
 public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String email = request.getParameter("email");
         String motDePasse = request.getParameter("motDePasse");
+        HttpSession session = request.getSession();
+        session.setAttribute("authenticatedUser", email);
+
 
         // Validate the data here
 
